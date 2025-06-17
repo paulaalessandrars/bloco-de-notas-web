@@ -2,8 +2,10 @@
 
 Bem-vindo ao repositório do Bloco de Notas, um projeto simples e funcional desenvolvido para criar, visualizar, editar e excluir notas diretamente no navegador. Este projeto foi construído utilizando as tecnologias fundamentais da web: HTML, CSS e JavaScript, focando na interatividade e na experiência do usuário.
 
-🚀 Sobre o Projeto <BR>
+
+🚀 Sobre o Projeto
 O Bloco de Notas é uma aplicação web que demonstra o uso combinado de HTML para estruturação, CSS para estilização e JavaScript para a lógica de funcionamento. O objetivo principal foi criar uma ferramenta prática para anotações rápidas, servindo como um excelente exemplo de um projeto front-end completo e interativo.
+
 
 ⚙️ Funcionalidades
 *   **Criar Nova Nota:** Adicione novas anotações de forma rápida e intuitiva.
@@ -12,13 +14,17 @@ O Bloco de Notas é uma aplicação web que demonstra o uso combinado de HTML pa
 *   **Excluir Nota:** Remova notas que não são mais necessárias.
 *   **(Opcional, se aplicável):** Salvar notas localmente no navegador (usando Local Storage), garantindo que suas anotações persistam mesmo após fechar a página.
 
+
 📦 Tecnologias Utilizadas
 *   **HTML5:** Para a estruturação semântica do conteúdo da aplicação.
 *   **CSS3:** Para a estilização visual, layout responsivo e design da interface.
 *   **JavaScript:** Para toda a lógica de funcionamento, manipulação do DOM, gerenciamento de eventos e persistência de dados (se implementado).
 
-🖼️ Como ficou
-![Screenshot da Interface Principal](link-para-sua-imagem-da-interface-principal.png)
+
+🖼️ Como ficou <br>
+
+![Screenshot da Interface Principal](assets/imgs/tela.png)
+
 
 📂 Como Executar o Projeto
 1.  **Clone o repositório:**
@@ -31,7 +37,9 @@ O Bloco de Notas é uma aplicação web que demonstra o uso combinado de HTML pa
     ```
 3.  **Abra o arquivo `index.html` no seu navegador favorito** e comece a usar seu Bloco de Notas!
 
-🤝 Contribuição
+
+🤝 Contribuição <br>
+
 Se você deseja contribuir com melhorias, novas funcionalidades ou correções, sinta-se à vontade para fazer um fork deste repositório, criar uma nova branch e enviar um pull request.
 
 1.  Faça um fork do projeto.
@@ -48,6 +56,7 @@ Se você deseja contribuir com melhorias, novas funcionalidades ou correções, 
     git push origin minha-nova-feature
     ```
 5.  Abra um Pull Request para análise.
+
 
 🤩 Por que esse projeto de Bloco de Notas é tão legal?
 *   **Aprendizado Prático:** Uma excelente oportunidade para entender como HTML, CSS e JavaScript trabalham juntos para criar uma aplicação web interativa do zero.
