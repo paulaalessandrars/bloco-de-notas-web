@@ -1,0 +1,235 @@
+/* Estilos gerais para o body */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #F0F0F0;
+  color: #2C2C2C;
+  transition: background 0.3s, color 0.3s;
+}
+
+.dark {
+  background-color: #2C2C2C;
+  color: #F0F0F0;
+}
+
+/* Estilos para o header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #eeeeee00;
+  color: #2C2C2C;;
+}
+
+.dark header {
+  background-color: #2C2C2C;
+}
+
+/* Estilo para o input de título do site */
+#site-title {
+  font-size: 1.5rem;
+  outline: none;
+  padding: 0.5rem;
+  border-radius: 6px;
+  transition: background-color 0.3s, color 0.3s;
+  border: none;
+  background-color: transparent;
+  max-width: calc(100% - 120px); /* Garante que o input não ultrapasse os ícones */
+  word-wrap: break-word;
+  white-space: normal;
+  flex-grow: 1; /* Faz com que o input ocupe o máximo de espaço disponível */
+}
+
+.dark #site-title {
+  background-color: transparent;
+  color: #F0F0F0;
+  border-color: transparent;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.actions button {
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  color: inherit;
+  padding: 0.3rem;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.actions button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.dark .actions button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#notes-container.grid-view {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+#notes-container.list-view {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.note {
+  background-color: #F0F0F0;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px #2C2C2C;
+  transition: background 0.3s, color 0.3s;
+}
+
+.dark .note {
+  background-color: #2C2C2C;
+  color: #F0F0F0;
+  box-shadow: 0 2px 5px #000000;
+}
+
+.note header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.note h3 {
+  all: unset;
+  display: block;
+  font-size: 1.1rem;
+  background-color: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  outline: none !important;
+  word-break: break-word;
+  cursor: text;
+
+}
+
+.delete-note,
+.color-toggle {
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: inherit;
+  padding: 0.3rem;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.delete-note:hover,
+.color-toggle:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.dark .delete-note:hover,
+.dark .color-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.content-area {
+  margin-top: 0.5rem;
+  min-height: 100px;
+  padding: 0.5rem;
+  border: 1px solid #F0F0F0;
+  border-radius: 6px;
+  background: #F0F0F0;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.dark .content-area {
+  background: #2C2C2C;
+  color: #F0F0F0;
+  border-color: #444;
+}
+
+.content-area img {
+  max-width: 100%;
+  display: block;
+  margin-top: 10px;
+  border-radius: 6px;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+    color: #2C2C2C
+  }
+
+  #site-title {
+    font-size: 1.2rem;
+  }
+
+  .actions button {
+    font-size: 1rem;
+  }
+
+  .note h3 {
+    font-size: 1rem;
+  }
+}
+
+/* Classe para o cabeçalho das notas */
+.note-header {
+  display: flex;
+  align-items: center;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  color: #2C2C2C;
+}
+
+/* Estilização do rodapé geral fixo */
+.general-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+  z-index: 1000;
+}
+
+.general-footer .signature {
+  font-weight: bold;
+  color: #DAA520;
+}
+
+body.light .general-footer {
+  background-color: #F0F0F0;
+  color: #2C2C2C;
+}
+
+body.dark .general-footer {
+  background-color: #2C2C2C;
+  color: #F0F0F0;
+}
+
+/* Ajuste para telas pequenas */
+@media (max-width: 600px) {
+  .general-footer {
+    font-size: 12px;
+    color: #2C2C2C
+  }
+}
+
+

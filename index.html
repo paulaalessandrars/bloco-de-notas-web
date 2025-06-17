@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meu site de anotações</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <input type="text" id="site-title" placeholder="Minhas Notas">
+    <div class="actions">
+        <button id="add-note" title="Nova Nota">➕</button>
+        <button id="toggle-view" title="Alternar Visualização">🔄</button>
+        <button id="toggle-theme" title="Alterar tema">🌙</button>
+       
+      </div>
+  </header>
+
+  <main>
+    <div id="notes-container" class="grid-view">
+      <!-- Notas serão inseridas aqui -->
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+
+  <footer class="general-footer">
+    <p>Desenvolvido por <span class="signature">Legion</span> &copy; 2025</p>
+  </footer>
+
+</body>
+</html>
